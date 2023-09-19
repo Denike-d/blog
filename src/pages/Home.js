@@ -21,17 +21,19 @@ export default function Home({ isAuth, setIsAuth }) {
   return (
     <div>
       <Nav isAuth={isAuth} setIsAuth={setIsAuth} />
-      <div className="mx-14 mb-8 mt-12">
+      <div className="lg:mx-14 mx-8 mb-8 mt-12">
         <hr className="bg-slate-300 h-0.4"></hr>
-        <p className="font-bold text-slate-900 text-[220px]">THE BLOG</p>
+        <p className="font-bold text-slate-900 lg:text-[220px] text-[100px] text-center">
+          THE BLOG
+        </p>
         <hr className="bg-slate-300 h-0.4"></hr>
         <div className="flex mx-auto items-center mt-24">
-          <div className="grid grid-cols-3 gap-12 mx-auto">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 mx-auto">
             {articles.length === 0 ? (
               <p>No Articles found</p>
             ) : (
               articles.map((item) => (
-                <div className="border border-gray w-80" key={item.id}>
+                <div className="border border-gray" key={item.id}>
                   <div className="justify-center flex align-center">
                     <img src={item.image} />
                   </div>

@@ -22,7 +22,7 @@ export default function Details({ isAuth, setIsAuth }) {
   return (
     <div>
       <Nav isAuth={isAuth} setIsAuth={setIsAuth} />
-      <div className="mx-14 mb-8 mt-12">
+      <div className="lg:mx-14 mx-4 mb-8 mt-12">
         <div className="flex mx-auto items-center mt-24">
           <div className="mx-auto">
             {item.length === 0 ? (
@@ -44,7 +44,7 @@ export default function Details({ isAuth, setIsAuth }) {
                   <p className="text-[14px] mt-2 text-gray-500 text-center">
                     {item.subheading}
                   </p>
-                  <p className="mt-8 leading-[30px] text-gray-600 text-clip text-center">
+                  <p className="mt-8 leading-[30px] text-gray-600 text-clip text-left">
                     {item.post}
                   </p>
                 </div>
